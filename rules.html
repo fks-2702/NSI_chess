@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les Pièces</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="index.js"></script>
+    
+    <div class="topnav">
+        <a href="./home.html">Home</a>
+        <a href="./game.html">Games</a>
+        <a href="./pieces.html">Pieces</a>
+        <a class="active" href="./rules.html">Rules</a>
+    </div> 
+    
+    <h1>Les Règles</h1>
+    
+    <h2>Objectif du jeu</h2>
+    <p>L'objectif du jeu d'échecs est de mettre le roi de l'adversaire en échec et mat, c'est-à-dire de le placer sous une attaque à laquelle il ne peut pas échapper.</p>
+    
+    <h2>Disposition des pièces</h2>
+    <p>Chaque joueur commence avec 16 pièces : 1 roi, 1 dame, 2 tours, 2 fous, 2 cavaliers et 8 pions. Les pièces sont disposées sur les deux premières rangées pour chaque joueur.</p>
+    
+    <h2>Déplacement des pièces</h2>
+    <ul>
+        <li><strong>Le Roi :</strong> Se déplace d'une case dans n'importe quelle direction.</li>
+        <li><strong>La Dame :</strong> Se déplace horizontalement, verticalement ou en diagonale sur n'importe quelle distance.</li>
+        <li><strong>La Tour :</strong> Se déplace horizontalement ou verticalement sur n'importe quelle distance.</li>
+        <li><strong>Le Fou :</strong> Se déplace en diagonale sur n'importe quelle distance.</li>
+        <li><strong>Le Cavalier :</strong> Se déplace en forme de "L" : deux cases dans une direction et une case perpendiculairement. Il peut sauter par-dessus les autres pièces.</li>
+        <li><strong>Le Pion :</strong> Avance d'une case vers l'avant, capture en diagonale et peut avancer de deux cases lors de son premier déplacement. Arrivé à la dernière rangée, il peut être promu à une autre pièce.</li>
+    </ul>
+    
+    <h2>Échec et échec et mat</h2>
+    <p><strong>Échec :</strong> Lorsqu'un roi est attaqué par une pièce adverse, il est en échec. Le joueur doit alors protéger son roi en déplaçant le roi, en capturant la pièce menaçante ou en interposant une autre pièce.</p>
+    <p><strong>Échec et mat :</strong> Lorsque le roi est en échec et qu'il n'y a aucun mouvement légal pour échapper à l'attaque, il est en échec et mat et la partie est terminée.</p>
+    
+    <h2>Autres règles importantes</h2>
+    <ul>
+        <li><strong>Roque :</strong> Un mouvement spécial impliquant le roi et une des tours, où le roi se déplace de deux cases vers la tour et la tour se déplace par-dessus le roi jusqu'à la case adjacente. Il y a des conditions spécifiques pour le roque.</li>
+        <li><strong>Promotion :</strong> Lorsqu'un pion atteint la dernière rangée, il peut être promu à une dame, une tour, un fou ou un cavalier.</li>
+        <li><strong>Prise en passant :</strong> Un mouvement spécial de capture par un pion, qui peut se produire lorsqu'un pion avance de deux cases à partir de sa position initiale et passe à côté d'un pion adverse.</li>
+        <li><strong>Pat :</strong> Une situation où un joueur n'a pas de mouvement légal et son roi n'est pas en échec. La partie se termine par un match nul.</li>
+    </ul>
+    
+  </body>
+</html>
