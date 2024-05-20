@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LFNY Chess</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <style>
+        body {
+            text-align: center;
+        }
+        .topnav {
+            display: flex;
+            
+            background-color: #333;
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content img {
+            padding: 35px;
+            width: auto;
+            height: 100px;
+        }
+        .content p, .content h1, .content h2, .content ul {
+            max-width: 800px;
+            text-align: left;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content ul li {
+            text-align: left;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
     <script src="index.js"></script>
     
     <div class="topnav">
@@ -18,15 +68,40 @@
         <a href="./players.html">Players</a>
     </div> 
     
-    <h1>LFNY Chess Hub</h1>
+    <div class="content">
+        <div style="display: inline-flex; align-items: center; justify-content: center;">
+            <img src="queenish.webp" alt="Chess Board">
+            <h1>Bienvenue sur le LFNY Chess Hub</h1>
+            <img src="king.webp" alt="Chess Board">
+        </div>
+        <p>Ce site sert de hub pour les joueurs d'échecs du LFNY. Ici, vous pouvez trouver des informations sur les pièces d'échecs, les règles et les stratégies, ainsi que jouer à des jeux en ligne.</p>
 
-    <div style="display:inline-flex">
-        <img src="./images/queen.png" alt="Chess Board" style="padding:35px; width:auto; height:540px;">
-        <p style="padding: 35px;">
-            Ce site est un hub pour les joueurs d'échecs du LFNY. Vous pouvez trouver des informations sur les pièces, les règles et les stratégies du jeu d'échecs.
-        </p>
-        <img src="./images/king.webp" alt="Chess Board" style="padding:35px; width:auto; height:540px;">
+        <h2>Accueil</h2>
+        <p>Vous êtes ici ! Cette page d'accueil vous donne un aperçu du site et des différentes sections disponibles.</p>
+
+        <h2>Jeux</h2>
+        <p>Dans la section <a href="./game.html">Jeux</a>, vous pouvez jouer aux échecs en ligne. Défiez d'autres joueurs ou améliorez vos compétences en jouant contre l'ordinateur.</p>
+
+        <h2>Pièces</h2>
+        <p>La section <a href="./pieces.html">Pièces</a> fournit des informations détaillées sur les différentes pièces d'échecs. Apprenez leurs mouvements, leurs valeurs et des stratégies pour les utiliser efficacement.</p>
+
+        <h2>Règles</h2>
+        <p>Dans la section <a href="./rules.html">Règles</a>, vous trouverez toutes les règles des échecs. Cette section est parfaite pour les débutants qui veulent apprendre à jouer et pour les joueurs expérimentés qui veulent revoir des règles spécifiques.</p>
+
+        <h2>Joueurs d'échecs célèbres</h2>
+        <p>Nous mettons également en avant des joueurs d'échecs célèbres qui ont eu un impact significatif sur le jeu. En voici quelques-uns :</p>
+
+        <ul>
+            <li><strong>Garry Kasparov</strong> : Considéré comme l'un des plus grands joueurs d'échecs de tous les temps, il est devenu le plus jeune champion du monde en 1985.</li>
+            <li><strong>Magnus Carlsen</strong> : L'actuel champion du monde, connu pour son talent exceptionnel et sa domination dans le monde des échecs.</li>
+            <li><strong>Bobby Fischer</strong> : Célèbre pour son match légendaire contre Boris Spassky en 1972, il a popularisé les échecs aux États-Unis.</li>
+            <li><strong>Anatoly Karpov</strong> : Un ancien champion du monde connu pour son jeu positionnel et ses nombreux duels avec Garry Kasparov.</li>
+            <li><strong>Viswanathan Anand</strong> : Champion du monde de 2007 à 2013, il a joué un rôle clé dans la popularisation des échecs en Inde.</li>
+        </ul>
+
+        
+        <p>Explorez le site pour améliorer vos connaissances et compétences en échecs. Amusez-vous à jouer et à en apprendre davantage sur ce jeu fascinant !</p>
     </div>
     
-  </body>
+</body>
 </html>
